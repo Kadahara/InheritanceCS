@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractGeometry", "AbstractGeometry\AbstractGeometry.csproj", "{0AD59CD4-1612-40ED-B2FB-8E6BBC65FF07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AD59CD4-1612-40ED-B2FB-8E6BBC65FF07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD59CD4-1612-40ED-B2FB-8E6BBC65FF07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD59CD4-1612-40ED-B2FB-8E6BBC65FF07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AD59CD4-1612-40ED-B2FB-8E6BBC65FF07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AFC47D7-F62A-4099-B887-84BBFD0EFC33}
+	EndGlobalSection
+EndGlobal
