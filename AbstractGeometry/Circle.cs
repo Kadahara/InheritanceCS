@@ -44,5 +44,11 @@ namespace AbstractGeometry
 			Pen pen = new Pen(Color, LineWidth);
 			e.Graphics.DrawEllipse(pen, StartX, StartY, 2 * (float)radius, 2 * (float)radius);
 		}
+		public override void info(PaintEventArgs e)
+		{
+			Console.WriteLine(this.GetType());
+			Console.WriteLine($"Радиус: {Radius}");
+			base.info(e);
+		}
 	}
 }
