@@ -1,4 +1,5 @@
 ﻿//#define WRITE_TO_FILE
+//#define INIT_HUMAN_METHOD
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -100,6 +101,7 @@ namespace Academy
 			if (type == typeof(Academy.Specialist).ToString()) human = new Specialist("", "", 0, "", "", 0, 0, "", 0);
 			return human;
 		}
+#if INIT_HUMAN_METHOD
 		static Human InitHuman(Human obj, string[] values)
 		{
 			if (obj.GetType() == typeof(Academy.Student))
@@ -149,5 +151,6 @@ namespace Academy
 			}
 			return obj;
 		}
+#endif 
 	}
 }
