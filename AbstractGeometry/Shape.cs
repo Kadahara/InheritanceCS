@@ -30,7 +30,7 @@ namespace AbstractGeometry
 			set
 			{
 				if (value < 10) value = 10;
-				if (value > 700) value = 500;
+				if (value > 500) value = 500;
 				start_y = value;
 			}
 		}
@@ -44,7 +44,7 @@ namespace AbstractGeometry
 				line_width = value;
 			}
 		}
-		public Shape(int start_x, int start_y, int line_width, Color color)	
+		public Shape(int start_x, int start_y, int line_width, Color color)
 		{
 			StartX = start_x;
 			StartY = start_y;
@@ -55,14 +55,12 @@ namespace AbstractGeometry
 		public abstract double GetPerimeter();
 		public abstract void Draw(PaintEventArgs e);
 
-		public virtual void info(PaintEventArgs e)
+		public virtual void Info(PaintEventArgs e)
 		{
-			Console.WriteLine($" Площадь фигуры: {this.GetArea()}");
-			Console.WriteLine($" Периметр фигуры: {this.GetPerimeter()}");
-			Console.WriteLine("_______________________________________");
+			Console.WriteLine($"Площадь фигуры: {this.GetArea()}");
+			Console.WriteLine($"Периметр фигуры: {this.GetPerimeter()}");
 			this.Draw(e);
+			Console.WriteLine();
 		}
-
-
 	}
 }
